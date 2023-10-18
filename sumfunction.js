@@ -22,5 +22,5 @@ const sum = (data = []) => {
 
 inp.on("close", () => {
   var input = userInput[0].split(" ");
-    console.log(sum(input));
+  console.log(sum(input));
   });
