@@ -1,4 +1,4 @@
-  //Return all the palindromes in an array--->>Anonymous function
+//e. Return all the palindromes in an array--->>Anonymous function
 
 const readline = require("readline");
 
