@@ -1,4 +1,4 @@
-//Sum of all numbers in an array ---->>(Anonymous function)
+//c. Sum of all numbers in an array ---->>(Anonymous function)
 
 const readline = require("readline");
 
