@@ -8,10 +8,11 @@ const inp = readline.createInterface({
 
 const userInput = [];
 
-inp.on("line", (data) => {
+inp.on("line", function(data) {
   userInput.push(data);
 });
-const removeDuplicates = (data = []) => {
+
+const removeDuplicates = function(data = []) {
   const newArr = [];
   for (let i = 0; i < data.length; i++) {
     let isDuplicate = false;
@@ -28,8 +29,8 @@ const removeDuplicates = (data = []) => {
   return newArr;
 }
 
-inp.on("close", () => {
-const input = userInput[0].split(" ");
+inp.on("close", function() {
+  const input = userInput[0].split(" ");
   const output = [];
   for (let i = 0; i < input.length; i++) {
     output.push(Number(input[i]));
@@ -37,3 +38,4 @@ const input = userInput[0].split(" ");
 
   console.log(removeDuplicates(output));
 });
+
