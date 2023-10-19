@@ -8,10 +8,11 @@ const inp = readline.createInterface({
 
 const userInput = [];
 
-inp.on("line", (data) => {
+inp.on("line", function(data) {
   userInput.push(data);
 });
-const rotateArr = (data, k) => {
+
+const rotateArr = function(data, k) {
     const length = data.length;
     k = k % length;
     
@@ -20,10 +21,10 @@ const rotateArr = (data, k) => {
         const newIndex = (i + k) % length;
         rotatedArray[newIndex] = data[i];
     }
-    return rotatedArray; 
+    return rotatedArray;
 }
 
-inp.on("close", () => {
+inp.on("close", function() {
 var input = userInput[0].split(" ");
     var k = Number(userInput[1]);
     
@@ -33,3 +34,4 @@ var input = userInput[0].split(" ");
     console.log(rotateArr(input, k));
 
 });
+
