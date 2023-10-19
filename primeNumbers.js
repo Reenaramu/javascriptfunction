@@ -1,4 +1,4 @@
-//Return all the prime numbers in an array--->>Anonymous
+//d. Return all the prime numbers in an array--->>Anonymous
 
 const readline = require("readline");
 
