@@ -8,10 +8,11 @@ const inp = readline.createInterface({
 
 const userInput = [];
 
-inp.on("line", (data) => {
+inp.on("line", function(data) {
   userInput.push(data);
 });
-const isPrime = (number) => {
+
+const isPrime = function(number) {
   if (number <= 1) {
     return false;
   }
@@ -23,15 +24,11 @@ const isPrime = (number) => {
   return true;
 };
 
-inp.on("close", () => {
-var input = userInput[0].split(" ");
-    console.log(primeNumbers(input));*/
-    
-    //Anonoymous function
-     /*const input = userInput[0].split(" ");
-     const primeNumbers = (data = []) => {
-     const output = [];
-     for (let i = 0; i < data.length; i++) {
+inp.on("close", function() {
+  const input = userInput[0].split(" ");
+  const primeNumbers = function(data = []) {
+    const output = [];
+    for (let i = 0; i < data.length; i++) {
       const num = Number(data[i]);
       if (isPrime(num)) {
         output.push(num);
@@ -41,5 +38,5 @@ var input = userInput[0].split(" ");
   };
 
   console.log(primeNumbers(input));
-
 });
+
