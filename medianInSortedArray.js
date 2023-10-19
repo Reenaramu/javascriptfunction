@@ -8,10 +8,11 @@ const inp = readline.createInterface({
 
 const userInput = [];
 
-inp.on("line", (data) => {
+inp.on("line", function(data) {
   userInput.push(data);
 });
-const findMedian = (data1 = [], data2 = []) => {
+
+const findMedian = function(data1 = [], data2 = []) {
   const length = data1.length + data2.length;
   const middle = Math.floor(length / 2);
   let i = 0, j = 0;
@@ -35,10 +36,10 @@ const findMedian = (data1 = [], data2 = []) => {
   }
 }
 
-inp.on("close", () => {
-    const input1 = userInput[0].split(" ");
-    const input2 = userInput[1].split(" ");
+inp.on("close", function() {
+  const input1 = userInput[0].split(" ");
+  const input2 = userInput[1].split(" ");
     
-    console.log(findMedian(input1, input2));
-
+  console.log(findMedian(input1, input2));
 });
+
