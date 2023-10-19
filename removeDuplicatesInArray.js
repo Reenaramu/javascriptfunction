@@ -1,4 +1,4 @@
-//Remove duplicates from an array===>> Anonoymous function
+//g. Remove duplicates from an array===>> Anonoymous function
 
 const readline = require("readline");
 
