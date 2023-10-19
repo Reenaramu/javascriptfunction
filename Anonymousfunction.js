@@ -1,5 +1,5 @@
-//Print odd numbers in an array 
-// Anonymous function
+//a. Print odd numbers in an array----------->> Anonymous function
+
 const readline = require("readline");
 
 const inp = readline.createInterface({
