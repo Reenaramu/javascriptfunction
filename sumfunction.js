@@ -11,16 +11,17 @@ const userInput = [];
 inp.on("line", (data) => {
   userInput.push(data);
 });
-const sum = (data = []) => {
-   var sum = 0;
+
+const sum = function(data = []) {
+    var sum = 0;
     for(var i = 0; i < data.length; i++) {
         var number = Number(data[i]);
         sum += number;
     }
-    return sum; 
+    return sum;
 }
 
-inp.on("close", () => {
-  var input = userInput[0].split(" ");
-  console.log(sum(input));
-  });
+inp.on("close", function() {
+    var input = userInput[0].split(" ");
+    console.log(sum(input));
+});
