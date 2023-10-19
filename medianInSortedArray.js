@@ -1,4 +1,4 @@
-//Return median of two sorted arrays of the same size--->>Anonymous function
+//f. Return median of two sorted arrays of the same size--->>Anonymous function
 
 const readline = require("readline");
 
