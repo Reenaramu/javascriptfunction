@@ -11,9 +11,18 @@ const userInput = [];
 inp.on("line", (data) => {
   userInput.push(data);
 });
-
+const titleCaps = (data = []) => {
+    var result = [];
+    for(var i = 0; i < data.length; i++) {
+        var words = data[i].toLowerCase();
+        result.push(words.charAt(0).toUpperCase() + words.slice(1));
+    }
+    return result;
+}
 
 inp.on("close", () => {
-
-
+    
+    var input = userInput[0].split(" ");
+    console.log(titleCaps(input));
+  
 });
