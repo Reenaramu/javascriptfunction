@@ -1,4 +1,4 @@
-//Print odd numbers in an array---->>Arrow function
+//a. Print odd numbers in an array---->>Arrow function
 const readline = require("readline");
 
 const inp = readline.createInterface({
